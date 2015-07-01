@@ -47,7 +47,7 @@ public class ListFragment extends Fragment {
 
     TextView taptoref;
 
-    public static boolean loadSuccess = false;
+    public static boolean loadSuccess = true;
 
     //    public static boolean read = false;
     @Override
@@ -216,6 +216,7 @@ public class ListFragment extends Fragment {
                   plist.setVisibility(View.GONE);
                   taptoref.setVisibility(View.VISIBLE);
               }
+                loadSuccess = true;
             }
 
             progress.dismiss();
